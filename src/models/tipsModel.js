@@ -1,6 +1,6 @@
 import tipsDb from '../database/tipsDb.js'
 
-let id = 0;
+let id = 1;
 
 class Tips {
     constructor(text) {
@@ -8,8 +8,8 @@ class Tips {
         this.text = text
     }
 
-    addTip = (tip) => {
-        tipsDb.push(tip);
+    addTip = () => {
+        tipsDb.push(this);
     };
 
     showTip = () => {
