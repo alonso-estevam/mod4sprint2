@@ -12,6 +12,11 @@ class Tips {
         tipsDb.push(tip);
     };
 
+    showTip = () => {
+        let randomTip = Math.floor(Math.random() * tipsDb.length);
+        return tipsDb[randomTip];
+    }
+
 }
 
 export default Tips
